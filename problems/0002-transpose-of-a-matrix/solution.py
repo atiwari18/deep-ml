@@ -10,7 +10,7 @@ def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
     """
     b: list[list[int|float]] = []
 
-    for i in zip(*a):
-        b.append(list(i))
-         
-    return b
+    for tuple in zip(*a):
+        b.append(list(tuple))
+    
+    return b 
